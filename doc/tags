@@ -1,0 +1,11 @@
+:GuiFontSizeDecrease	gui-font-size.txt	/*:GuiFontSizeDecrease*
+:GuiFontSizeIncrease	gui-font-size.txt	/*:GuiFontSizeIncrease*
+:GuiFontSizeReset	gui-font-size.txt	/*:GuiFontSizeReset*
+g:gfs_create_default_mappings	gui-font-size.txt	/*g:gfs_create_default_mappings*
+gui-font-size	gui-font-size.txt	/*gui-font-size*
+gui-font-size-commands	gui-font-size.txt	/*gui-font-size-commands*
+gui-font-size-config	gui-font-size.txt	/*gui-font-size-config*
+gui-font-size-contents	gui-font-size.txt	/*gui-font-size-contents*
+gui-font-size-intro	gui-font-size.txt	/*gui-font-size-intro*
+gui-font-size-mappings	gui-font-size.txt	/*gui-font-size-mappings*
+gui-font-size.txt	gui-font-size.txt	/*gui-font-size.txt*

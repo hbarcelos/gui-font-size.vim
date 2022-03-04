@@ -1,0 +1,68 @@
+*gui-font-size.txt*	Easily control font size on GUIs running Vim (i.e: `gvim`)
+Henrique Barcelos <16565602+hbarcelos@users.noreply.github.com>
+                                                               *gui-font-size*
+
+==============================================================================
+CONTENTS                                              *gui-font-size-contents*
+  1. Intro...............................................|gui-font-size-intro|
+  2. Commands.........................................|gui-font-size-commands|
+  3. Mappings.........................................|gui-font-size-mappings|
+  4. Config.............................................|gui-font-size-config|
+
+==============================================================================
+INTRO                                                    *gui-font-size-intro*
+
+Provides commands and mappings that allow users to easily control the font
+size when Vim is running in a GUI environment (i.e.: `gvim`).
+
+==============================================================================
+COMMANDS                                              *gui-font-size-commands*
+
+:GuiFontSizeDecrease [delta]                            *:GuiFontSizeDecrease*
+  Decreases the GUI font size by [delta].
+  [delta] is 1 if omitted.
+
+:GuiFontSizeIncrease [delta]                            *:GuiFontSizeIncrease*
+  Increases the GUI font size by [delta].
+  [delta] is 1 if omitted.
+
+:GuiFontSizeReset                                          *:GuiFontSizeReset*
+  Resets the GUI font size to its initial values.
+
+==============================================================================
+MAPPINGS                                              *gui-font-size-mappings*
+
+PLUG MAPPINGS
+Defined `<Plug>` mappings:
+>
+    <Plug>(GFSDec)  :GuiFontSizeDecrease
+    <Plug>(GFSInc)  :GuiFontSizeIncrease
+    <Plug>(GFSRes)  :GuiFontSizeReset
+<
+DEFAULT MAPPINGS
+Key mappings created by default:
+>
+    <CTRL+->  <Plug>(GFSDec)
+    <CTRL++>  <Plug>(GFSInc)
+    <CTRL+0>  <Plug>(GFSRes)
+<
+If you do not wish to use the default mappings, you can overwrite the
+|g:gfs_create_default_mappings| config and define the mappings yourself:
+>
+    let g:gfs_create_default_mappings = 0
+
+    nmap <Leader><Up> <Plug>(GFSDec)
+    nmap <Leader><Down> <Plug>(GFSDec)
+    nmap <Leader><BS> <Plug>(GFSRes)
+<
+NOTICE: `<Plug>` mappings do not work with `noremap`.
+
+==============================================================================
+CONFIG                                                  *gui-font-size-config*
+
+                                               *g:gfs_create_default_mappings*
+If `1` it creates the default mappings. Default: 1
+
+
+
+vim:tw=78:ts=8:ft=help:norl:

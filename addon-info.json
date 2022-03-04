@@ -1,0 +1,6 @@
+{
+  "name": "gui-font-size",
+  "description": "Easily control font size on GUIs running Vim (i.e: `gvim`)",
+  "author": "Henrique Barcelos <16565602+hbarcelos@users.noreply.github.com>",
+  "dependencies": {}
+}
