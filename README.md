@@ -1,6 +1,17 @@
 # gui-font-size
 Easily control font size on GUIs running Vim (i.e: `gvim`)
 
+<!-- vim-markdown-toc GFM -->
+
+* [Intro](#intro)
+* [Commands](#commands)
+* [Mappings](#mappings)
+    * [Plug Mappings](#plug-mappings)
+    * [Default Mappings](#default-mappings)
+* [Config](#config)
+
+<!-- vim-markdown-toc -->
+
 ## Intro
 
 Provides commands and mappings that allow users to easily control the font
